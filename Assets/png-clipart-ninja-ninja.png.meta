@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      png-clipart-ninja-ninja_0: 5031729282369596839
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
