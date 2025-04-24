@@ -384,8 +384,9 @@ MonoBehaviour:
   mensagemCompleta: "Seja muito bem-vindo ao Ninja Desh, guerreiro das sombras! \nPrepare-se
     para desbloquear habilidades secretas, dominar t\xE9cnicas lend\xE1rias e trilhar
     o caminho da honra com ast\xFAcia e determina\xE7\xE3o. Aqui, cada desafio \xE9
-    uma chance de evoluir \u2013 e cada passo seu \xE9 digno de um verdadeiro ninja.\n\nQue
-    sua jornada seja silenciosa como o vento... e impactante como um golpe certeiro!"
+    uma chance de evoluir \u2013 e cada passo seu \xE9 digno de um verdadeiro ninja.\nQue
+    sua jornada seja silenciosa como o vento... e impactante como um golpe certeiro!\nH\xE1
+    uma batalha pela frente, prepare-se!"
   velocidadeDigitacao: 0.05
   som: {fileID: 8300000, guid: 201471410c7edc446a5f66b83ad572ba, type: 3}
 --- !u!82 &243363183
@@ -523,7 +524,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 368, y: -190}
+  m_AnchoredPosition: {x: 361, y: -198}
   m_SizeDelta: {x: 219.5099, y: 83.8422}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &505393251
@@ -811,7 +812,7 @@ Transform:
   m_GameObject: {fileID: 784097911}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.28, y: -2.05, z: 0}
+  m_LocalPosition: {x: -5.51, y: -2.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -955,7 +956,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 340, y: -90}
+  m_AnchoredPosition: {x: 336, y: -83}
   m_SizeDelta: {x: 499.0731, y: 559.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1171682797
@@ -981,8 +982,9 @@ MonoBehaviour:
   m_text: "Seja muito bem-vindo ao Ninja Desh, guerreiro das sombras! \nPrepare-se
     para desbloquear habilidades secretas, dominar t\xE9cnicas lend\xE1rias e trilhar
     o caminho da honra com ast\xFAcia e determina\xE7\xE3o. Aqui, cada desafio \xE9
-    uma chance de evoluir \u2013 e cada passo seu \xE9 digno de um verdadeiro ninja.\n\nQue
-    sua jornada seja silenciosa como o vento... e impactante como um golpe certeiro!"
+    uma chance de evoluir \u2013 e cada passo seu \xE9 digno de um verdadeiro ninja.\nQue
+    sua jornada seja silenciosa como o vento... e impactante como um golpe certeiro!\nH\xE1
+    uma batalha pela frente, prepare-se!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

@@ -153,7 +153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -72.4}
+  m_AnchoredPosition: {x: 0, y: -12}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3905153
@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 61208011}
   - component: {fileID: 61208010}
   m_Layer: 5
-  m_Name: Mago
+  m_Name: "Hattori Hanz\u014D"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -370,7 +370,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3278025511288246781, guid: 62e60bda7e6418549ad4bc1a715612da, type: 3}
+  m_Sprite: {fileID: -7859497518300755148, guid: 4ffbd06e5c5555b4a874a823ce7b1a81, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -735,7 +735,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -72.4}
+  m_AnchoredPosition: {x: 0, y: -19}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &766931487
@@ -850,7 +850,7 @@ GameObject:
   - component: {fileID: 878268211}
   - component: {fileID: 878268210}
   m_Layer: 5
-  m_Name: Paladino
+  m_Name: "F\u016Bma Kotar\u014D"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -952,7 +952,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6788167969615734115, guid: 910c44073ef3004458e29383e6f90a8c, type: 3}
+  m_Sprite: {fileID: -1245198762752144021, guid: 5fdb5dd5e8d860a47a8c6d902e23cb45, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1119,7 +1119,7 @@ GameObject:
   - component: {fileID: 1374463834}
   - component: {fileID: 1374463833}
   m_Layer: 5
-  m_Name: Druida
+  m_Name: Mochizuki Chiyome
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1142,7 +1142,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 401.7973, y: -30}
+  m_AnchoredPosition: {x: 409, y: -13}
   m_SizeDelta: {x: 334.1714, y: 410.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1374463833
@@ -1221,7 +1221,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -273893379612252286, guid: 9eb0a788f2130904ba92634b9de244b0, type: 3}
+  m_Sprite: {fileID: 1127945124445236983, guid: 7867f6f13f79124499d3dde93c67920e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1264,7 +1264,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1428978516}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: e109479d138955345882c6461ec345ec, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 0cfa0e55f775c8943b9bdfc569d6121d, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 2027197165}
@@ -1339,7 +1339,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -72.4}
+  m_AnchoredPosition: {x: 0, y: -56}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1739359791
@@ -1427,7 +1427,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 409.5804, z: 0, w: 73.361084}
+  m_margin: {x: 0, y: 411.31787, z: 0, w: 73.361084}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

@@ -1,21 +1,21 @@
-using UnityEngine;
+Ôªøusing UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    private AudioSource player; //ReferÍncia ao componente AudioSource
-    [SerializeField] private AudioClip som; //Arquivo (Clip) de ·udio a ser reproduzido
+    private AudioSource player; //Refer√™ncia ao componente AudioSource
+    [SerializeField] private AudioClip som; //Arquivo (Clip) de √°udio a ser reproduzido
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        player = GetComponent<AudioSource>(); //Guarda a referÍncia do AudioSource
+        player = GetComponent<AudioSource>(); //Guarda a refer√™ncia do AudioSource
     }
 
     public void Jogar()
     {
-        TocarSom(); //Chama a funÁ„o para tocar o som
-        Invoke("SelecionaPersonagens", 1f); //Chama a funÁ„o SelecionaPersonagens apÛs 1 segundo
+        TocarSom(); //Chama a fun√ß√£o para tocar o som
+        Invoke("SelecionaPersonagens", 1f); //Chama a fun√ß√£o SelecionaPersonagens ap√≥s 1 segundo
     }
 
     public void Creditos()
@@ -30,17 +30,17 @@ public class Menu : MonoBehaviour
 
     public void Paladino()
     {
-        SceneManager.LoadScene("Paladino");
+        SceneManager.LoadScene("F≈´ma Kotar≈ç");
     }
 
     public void Mago()
     {
-        SceneManager.LoadScene("Mago");
+        SceneManager.LoadScene("Hattori Hanz≈ç");
     }
 
     public void Druida()
     {
-        SceneManager.LoadScene("Druida");
+        SceneManager.LoadScene("Mochizuki Chiyome");
     }
 
     private void TocarSom()
@@ -55,8 +55,8 @@ public class Menu : MonoBehaviour
 
     public void SairDaFloresta()
     {
-        TocarSom(); //Chama a funÁ„o para tocar o som
-        Invoke("EscolhaFloresta", 1f); //Chama a funÁ„o EscolhaFloresta apÛs 1 segundo
+        TocarSom(); //Chama a fun√ß√£o para tocar o som
+        Invoke("EscolhaFloresta", 1f); //Chama a fun√ß√£o EscolhaFloresta ap√≥s 1 segundo
     }
 
     private void EscolhaFloresta()
@@ -66,8 +66,8 @@ public class Menu : MonoBehaviour
 
     public void BatalhaDaFlorestaEsquerda()
     {
-        TocarSom(); //Chama a funÁ„o para tocar o som
-        Invoke("EscolhaFlorestaBatalha", 1f); //Chama a funÁ„o EscolhaFloresta apÛs 1 segundo
+        TocarSom(); //Chama a fun√ß√£o para tocar o som
+        Invoke("EscolhaFlorestaBatalha", 1f); //Chama a fun√ß√£o EscolhaFloresta ap√≥s 1 segundo
     }
 
     private void EscolhaFlorestaBatalha()

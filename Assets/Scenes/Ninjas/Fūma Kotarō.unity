@@ -167,8 +167,9 @@ MonoBehaviour:
   mensagemCompleta: "Seja muito bem-vindo ao Ninja Desh, guerreiro das sombras! \nPrepare-se
     para desbloquear habilidades secretas, dominar t\xE9cnicas lend\xE1rias e trilhar
     o caminho da honra com ast\xFAcia e determina\xE7\xE3o. Aqui, cada desafio \xE9
-    uma chance de evoluir \u2013 e cada passo seu \xE9 digno de um verdadeiro ninja.\n\nQue
-    sua jornada seja silenciosa como o vento... e impactante como um golpe certeiro!"
+    uma chance de evoluir \u2013 e cada passo seu \xE9 digno de um verdadeiro ninja.\nQue
+    sua jornada seja silenciosa como o vento... e impactante como um golpe certeiro!\nH\xE1
+    uma batalha pela frente, prepare-se!"
   velocidadeDigitacao: 0.05
   som: {fileID: 0}
 --- !u!1 &191860689
@@ -533,8 +534,9 @@ MonoBehaviour:
   m_text: "Seja muito bem-vindo ao Ninja Desh, guerreiro das sombras! \nPrepare-se
     para desbloquear habilidades secretas, dominar t\xE9cnicas lend\xE1rias e trilhar
     o caminho da honra com ast\xFAcia e determina\xE7\xE3o. Aqui, cada desafio \xE9
-    uma chance de evoluir \u2013 e cada passo seu \xE9 digno de um verdadeiro ninja.\n\nQue
-    sua jornada seja silenciosa como o vento... e impactante como um golpe certeiro!"
+    uma chance de evoluir \u2013 e cada passo seu \xE9 digno de um verdadeiro ninja.\nQue
+    sua jornada seja silenciosa como o vento... e impactante como um golpe certeiro!\nH\xE1
+    uma batalha pela frente, prepare-se!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -768,7 +770,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -3324836200799868298, guid: c9517f4d3d88d0147906bd78c6eb1eff, type: 3}
+  m_Sprite: {fileID: -1245198762752144021, guid: 5fdb5dd5e8d860a47a8c6d902e23cb45, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -788,8 +790,8 @@ Transform:
   m_GameObject: {fileID: 955968687}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.32, y: 0.43, z: 0}
-  m_LocalScale: {x: 0.86243325, y: 0.7287757, z: 1}
+  m_LocalPosition: {x: -5.2318, y: -0.113, z: 0}
+  m_LocalScale: {x: 0.88014925, y: 1.0582906, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
