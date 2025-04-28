@@ -28,19 +28,19 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("MenuPrincipal");
     }
 
-    public void Paladino()
+    public void FumaKotaro()
     {
-        SceneManager.LoadScene("Fūma Kotarō");
+        SceneManager.LoadScene("FumaKotaro");
     }
 
-    public void Mago()
+    public void HattoriHanzo()
     {
-        SceneManager.LoadScene("Hattori Hanzō");
+        SceneManager.LoadScene("HattoriHanzo");
     }
 
-    public void Druida()
+    public void MochizukiChiyome()
     {
-        SceneManager.LoadScene("Mochizuki Chiyome");
+        SceneManager.LoadScene("MochizukiChiyome");
     }
 
     private void TocarSom()
