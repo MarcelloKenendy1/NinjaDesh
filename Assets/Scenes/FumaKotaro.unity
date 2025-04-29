@@ -631,8 +631,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 405, y: -24}
-  m_SizeDelta: {x: 266.2743, y: 446.68}
+  m_AnchoredPosition: {x: 398.8114, y: 26.393}
+  m_SizeDelta: {x: 253.8971, y: 345.8939}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &850994627
 GameObject:
@@ -668,7 +668,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 365.49, y: -0.0000076294}
+  m_AnchoredPosition: {x: 365.49, y: 0.0000076294}
   m_SizeDelta: {x: 370.0222, y: 505}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &850994629
@@ -947,7 +947,7 @@ GameObject:
   - component: {fileID: 1309405438}
   - component: {fileID: 1309405441}
   m_Layer: 5
-  m_Name: Button
+  m_Name: proximafase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1017,9 +1017,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1309405441}
-        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: BatalhaDaFlorestaEsquerda
+      - m_Target: {fileID: 1309405438}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+        m_MethodName: Select
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

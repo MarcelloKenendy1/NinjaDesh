@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Runtime.CompilerServices;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
@@ -59,19 +60,25 @@ public class Menu : MonoBehaviour
         Invoke("EscolhaFloresta", 1f); //Chama a função EscolhaFloresta após 1 segundo
     }
 
-    private void EscolhaFloresta()
+    private void inimigo()
     {
-        SceneManager.LoadScene("EscolhaFloresta");
+        SceneManager.LoadScene("inimigo");
+        Invoke("inimigo", 1f);
     }
 
-    public void BatalhaDaFlorestaEsquerda()
+    public void Batalhar()
     {
         TocarSom(); //Chama a função para tocar o som
-        Invoke("EscolhaFlorestaBatalha", 1f); //Chama a função EscolhaFloresta após 1 segundo
     }
 
-    private void EscolhaFlorestaBatalha()
+    private void Batalha()  
     {
-        SceneManager.LoadScene("EscolhaFlorestaBatalha");
+        SceneManager.LoadScene("Batalha");
+    }
+
+    private void FumaKotaroo()
+    {
+        SceneManager.LoadScene("inimigo");
     }
 }
+       
