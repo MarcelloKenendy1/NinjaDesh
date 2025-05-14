@@ -530,6 +530,7 @@ GameObject:
   - component: {fileID: 1538338760}
   - component: {fileID: 1538338762}
   - component: {fileID: 1538338761}
+  - component: {fileID: 1538338763}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -553,8 +554,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: -19}
-  m_SizeDelta: {x: 742.59, y: 532.285}
+  m_AnchoredPosition: {x: 72.70764, y: -6.0975037}
+  m_SizeDelta: {x: 868.0052, y: 506.48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1538338761
 MonoBehaviour:
@@ -576,8 +577,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Kennedy- Desenvolvedor\n\n--\n\nMusicas\nThe Road To Mordor - Ezra Lipp\nBattle
-    march action - \nSound Effect by Universfield from Pixabay"
+  m_text: "Desenvolvedor-- Marcello Kennedy\nProdutor:  marcello Kennedy\t\nAnimador:
+    Marcello Kennedy\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -656,6 +657,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1538338759}
   m_CullTransparentMesh: 1
+--- !u!114 &1538338763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538338759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23573cce63f52a049a8f136c01f63404, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texto: {fileID: 0}
+  mensagemCompleta: "Kennedy- Desenvolvedor\n\n--\nProdutor:  marcello Kennedy\t\nAnimador:
+    Marcello Kennedy\n"
+  velocidadeDigitacao: 0.05
+  som: {fileID: 0}
 --- !u!1 &1825283632
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,6 +957,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1841338291}
   m_CullTransparentMesh: 1
+--- !u!1 &2023144387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2023144389}
+  - component: {fileID: 2023144388}
+  m_Layer: 0
+  m_Name: EscreveTexto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2023144388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023144387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23573cce63f52a049a8f136c01f63404, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texto: {fileID: 1538338761}
+  mensagemCompleta: "Desenvolvedor-- Marcello Kennedy\nProdutor:  marcello Kennedy\t\nAnimador:
+    Marcello Kennedy\n"
+  velocidadeDigitacao: 0.05
+  som: {fileID: 0}
+--- !u!4 &2023144389
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023144387}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1275.1992, y: 377.12354, z: -1.0067229}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2084550309
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,3 +1093,4 @@ SceneRoots:
   - {fileID: 569950957}
   - {fileID: 2084550312}
   - {fileID: 760765131}
+  - {fileID: 2023144389}

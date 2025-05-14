@@ -34,14 +34,15 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("FumaKotaro");
     }
 
-    public void HattoriHanzo()
+    private void Inimigo()
     {
-        SceneManager.LoadScene("HattoriHanzo");
+        SceneManager.LoadScene("Inimigo");
+
     }
 
-    public void MochizukiChiyome()
+    public void INIMIGO()
     {
-        SceneManager.LoadScene("MochizukiChiyome");
+        SceneManager.LoadScene("INIMIGO");
     }
 
     private void TocarSom()
@@ -54,10 +55,10 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("SelecionaPersonagens");
     }
 
-    public void SairDaFloresta()
+    public void batalhar()
     {
         TocarSom(); //Chama a função para tocar o som
-        Invoke("EscolhaFloresta", 1f); //Chama a função EscolhaFloresta após 1 segundo
+        Invoke("Batalhar", 1f); //Chama a função EscolhaFloresta após 1 segundo
     }
 
     private void inimigo()
@@ -65,20 +66,21 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("inimigo");
         Invoke("inimigo", 1f);
     }
-
+    /*
     public void Batalhar()
     {
         TocarSom(); //Chama a função para tocar o som
     }
-
-    private void Batalha()  
+    */
+    private void Batalhar()  
     {
-        SceneManager.LoadScene("Batalha");
+        SceneManager.LoadScene("Batalhar");
     }
 
     private void FumaKotaroo()
     {
-        SceneManager.LoadScene("inimigo");
+        SceneManager.LoadScene("Inimigo");
     }
+   
 }
        

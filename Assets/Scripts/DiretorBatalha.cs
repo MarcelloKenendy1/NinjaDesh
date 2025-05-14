@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DiretorBatalha : MonoBehaviour
 {
@@ -11,7 +12,11 @@ public class DiretorBatalha : MonoBehaviour
     [SerializeField] TextMeshProUGUI nomePlayer;
     [SerializeField] TextMeshProUGUI nomeInimigo;
     [SerializeField] TextMeshProUGUI informativo;
-    
+    [SerializeField] Button botaoEspecial;
+    [SerializeField] Button botaoAtaque;
+    [SerializeField] string turno = "Player";
+    bool verificadorDeTurno = true;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,26 +24,43 @@ public class DiretorBatalha : MonoBehaviour
         vidaInimigo.text = inimigo.GetVida().ToString();
         nomePlayer.text = player.GetNomePersonagem();
         nomeInimigo.text = inimigo.GetNomePersonagem();
+        botaoEspecial.interactable = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+
+        if(turno == "Player" && verificadorDeTurno)
+        {
+            botaoAtaque.interactable = true;
+
+            if (player.VerificaEspecial())
+            {
+                botaoEspecial.interactable = true;
+            }
+            else
+            {
+                botaoEspecial.interactable = false;
+            }
+
+            verificadorDeTurno = false;
+        }
+        else if(turno == "Inimigo" && verificadorDeTurno)
+        {
+            StartCoroutine(AtaqueInimigo());
+        }
     }
 
     public void AtaquePlayer()
     {
         inimigo.LevarDano(player.Ataque());
-        player.LevarDano(inimigo.Ataque());
-        AtualizaDadosTela();
+        StartCoroutine(AtaqueP());
     }
 
     public void AtaqueEspecial()
     {
         inimigo.LevarDano(player.Especial());
-        player.LevarDano(inimigo.Ataque());
-        AtualizaDadosTela();
+        StartCoroutine(AtaqueP());
     }
 
     private void AtualizaDadosTela()
@@ -54,8 +76,39 @@ public class DiretorBatalha : MonoBehaviour
 
     private IEnumerator ExibeTexto(string texto)
     {
-        informativo.text = texto;
-        yield return new WaitForSeconds(1f);
-        //informativo.text = "";
+        informativo.text += texto + "\n";
+        yield return new WaitForSeconds(5f);
+        informativo.text = "";
+    }
+
+    private IEnumerator AtaqueInimigo()
+    {
+        verificadorDeTurno = false;
+
+        if (turno == "Inimigo")
+        {
+            botaoAtaque.interactable = false;
+            botaoEspecial.interactable = false;
+            player.LevarDano(inimigo.Ataque());
+            AtualizaDadosTela();
+            yield return new WaitForSeconds(5f);
+            verificadorDeTurno = true;
+            turno = "Player";
+        }
+    }
+
+    private IEnumerator AtaqueP()
+    {
+        verificadorDeTurno = false;
+        botaoAtaque.interactable = false;
+        botaoEspecial.interactable = false;
+
+        if (turno == "Player")
+        {
+            AtualizaDadosTela();
+            yield return new WaitForSeconds(5f);
+            verificadorDeTurno = true;
+            turno = "Inimigo";
+        }
     }
 }

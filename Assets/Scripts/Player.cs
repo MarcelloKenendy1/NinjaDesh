@@ -10,6 +10,15 @@ public class Player : MonoBehaviour
     [SerializeField] private int especial;
     [SerializeField] private bool estahVivo = true;
     [SerializeField] private DiretorBatalha dB;
+    [SerializeField] private Sprite spriteDerrota;
+    private Animator anim;
+    private SpriteRenderer spriteRenderer;
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     public string GetNomePersonagem()
     {
@@ -26,25 +35,34 @@ public class Player : MonoBehaviour
         return estahVivo;
     }
 
+    public bool VerificaEspecial() //retorna true se o jogador tem especial e false se nao tem
+    {
+        if (especial >= 3)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
 
     public int Ataque()
     {
         int valorAtaque = Random.Range(0,ataque);
 
-        this.especial++;
+        especial++;
 
 
         if (valorAtaque > 0)
         {
             dB.RecebeTexto("ARgh! Sinta Minha Furia!");
             dB.RecebeTexto($"{nomePersonagem} ataca com {valorAtaque}");
-            Debug.Log($"Especial: {this.especial}");
         }
         else
         {
-            Debug.Log("");
             dB.RecebeTexto($"{nomePersonagem} erra o ataque.");
-            Debug.Log($"Especial: {this.especial}");
         }
 
 
@@ -55,21 +73,15 @@ public class Player : MonoBehaviour
     {
         int valorDefesa = Random.Range(0, defesa);
 
-        this.especial++;
+        especial++;
 
-        
         if(valorDefesa > 0)
         {
-            Debug.Log("");
-            Debug.Log("ARgh!");
             dB.RecebeTexto($"{nomePersonagem} defende com {valorDefesa}");
-            Debug.Log($"Especial: {this.especial}");
         }
         else
         {
-            Debug.Log("");
             dB.RecebeTexto($"{nomePersonagem} nao consegue defender.");
-            Debug.Log($"Especial: {this.especial}");
         }
         
 
@@ -81,26 +93,23 @@ public class Player : MonoBehaviour
         int valorEspecial = Random.Range(20, ataque);
         int chanceDeDobrar = Random.Range(0, 100);
 
-        if (chanceDeDobrar >= 90 && this.especial == 3)
+        if (chanceDeDobrar >= 90 && especial >= 3)
         {
             int valorEspecialDobrado = valorEspecial * 2;
-            Debug.Log("");
             dB.RecebeTexto("ARgh! Sede de Vinguança!");
             dB.RecebeTexto($"{nomePersonagem} ataca com {valorEspecialDobrado}");
-            this.especial = 0;
+            especial = 0;
             return valorEspecialDobrado;
         }
-        else if (this.especial == 3)
+        else if (chanceDeDobrar < 90 && especial >= 3)
         {
-            Debug.Log("");
             dB.RecebeTexto("ARgh! Vou te esmagar!");
             dB.RecebeTexto($"{nomePersonagem} ataca com {valorEspecial}");
-            this.especial = 0;
+            especial = 0;
             return valorEspecial;
         }
         else
         {
-            Debug.Log("");
             dB.RecebeTexto("Seu especial nao esta carregado!");
             return 0;
         }
@@ -114,17 +123,20 @@ public class Player : MonoBehaviour
         {
             Debug.Log("");
             dB.RecebeTexto($"{nomePersonagem} consegue se defender!");
+            anim.SetTrigger("Defesa");
         }
         else if (danoFinal <= 25)
         {
             Debug.Log("");
             dB.RecebeTexto($"{nomePersonagem} leva dano de {danoFinal}.");
+            anim.SetTrigger("Dano");
             vida -= danoFinal; //vida = vida - danoFinal;
         }
         else
         {
             Debug.Log("");
             dB.RecebeTexto($"{nomePersonagem} toma uma porrada de {danoFinal}.");
+            anim.SetTrigger("Dano");
             vida -= danoFinal;
         }
 
@@ -137,7 +149,6 @@ public class Player : MonoBehaviour
         }
         else
         {
-            Debug.Log("");
             dB.RecebeTexto($"{nomePersonagem}, morreu!");
         }
 
@@ -146,6 +157,7 @@ public class Player : MonoBehaviour
     {
         if (vida <= 0)
         {
+            spriteRenderer.sprite = spriteDerrota;
             estahVivo = false; //Ta morto
         }
     }    
