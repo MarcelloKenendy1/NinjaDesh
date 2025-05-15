@@ -45,6 +45,11 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("INIMIGO");
     }
 
+    public void vitoria()
+    {
+        SceneManager.LoadScene("vitoria");
+    }
+
     private void TocarSom()
     {
         player.PlayOneShot(som);

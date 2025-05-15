@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      lorde_sombrio_fundo_removido (1)_0: 7268701967196180081
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
