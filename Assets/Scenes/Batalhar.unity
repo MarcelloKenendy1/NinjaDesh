@@ -1174,7 +1174,7 @@ MonoBehaviour:
   especial: 20
   estahVivo: 1
   dB: {fileID: 1084437408}
-  spriteDerrota: {fileID: -6788167969615734115, guid: 910c44073ef3004458e29383e6f90a8c, type: 3}
+  spriteDerrota: {fileID: 0}
 --- !u!95 &761771271
 Animator:
   serializedVersion: 7

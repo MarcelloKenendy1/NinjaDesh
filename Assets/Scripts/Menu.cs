@@ -49,6 +49,27 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene("vitoria");
     }
+    public void artefato()
+    {
+        SceneManager.LoadScene("artefato");
+    }
+
+    public void Espada()
+    {
+        SceneManager.LoadScene("Espada");
+    }
+    public void Espada1()
+    {
+        SceneManager.LoadScene("Espada1");
+    }
+    public void Espada2()
+    {
+        SceneManager.LoadScene("Espada2");
+    }
+    public void Obrigado()
+    {
+        SceneManager.LoadScene("Obrigado");
+    }
 
     private void TocarSom()
     {
